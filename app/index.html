@@ -7,66 +7,440 @@
     <meta name="theme-color" content="#9CC2CE"> <!-- цвет вкладки chrome -->
     <link rel="shortcut icon" href="img/ico/triangle.png" type="image/x-icon">
     <title>Padilo</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <section class="container-fluid">
+    <section class="container-fluid first_section">
         <div class="row">
-            <div class="col col-12">
+            <div class="col col-12 foxContainer">
                 <div class="row">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col col-12">
-                                <header class="header">
-                                    <div class="header-logo">
-                                        <img src="" alt="log">
-                                    </div><!-- logo -->
-                                    <nav class="header-nav">
-                                        <ul>
-                                            <li>кнопка</li>
-                                            <li>кнопка</li>
-                                            <li>кнопка</li>
-                                            <li>кнопка</li>
-                                        </ul>
-                                    </nav> 
+                    <div class="col col-12">
+                        <header class="header">
+                            <div class="header-logo">
+                                <img src="/img/logo.png" alt="log">
+                            </div><!-- logo -->
+                            <nav class="header-nav">
+                                    <svg class="ham hamRotate ham1 mobilBar" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                                            <path
+                                                  class="line top"
+                                                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                            <path
+                                                  class="line middle"
+                                                  d="m 30,50 h 40" />
+                                            <path
+                                                  class="line bottom"
+                                                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                                          </svg>
+                                                                     
+                                <ul id="nav">
+                                    <li>
+                                        <a href="#">
+                                            Виртуальная АТС
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Виртуальные номера
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Решения
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            О компании
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav> 
 
-                                    <div class="header-other">
-                                        <div class="searh"></div>
-                                        <div class="phone">
-                                            <a href="tel:4953277277">(495) 327-72-77</a>
-                                        </div>
-                                        <a href="#"></a>
+                            <div class="header-other">
+                                <div class="searh">
+                                    <img src="/img/ico/zoom.svg" alt="zoom">
+                                </div>
+                                <a href="tel:4953277277" class="fox-tel--icon">
+                                    <img src="/img/ico/phone.svg" alt="phone">    
+                                    (495) 327-72-77
+                                </a>
+                                <a href="#" class="fox-btn--orange">
+                                    Личный кабинет
+                                </a>
+                            </div>
+                        </header>
+                    </div><!-- col -->
+                </div> <!-- row -->
+            </div><!-- col col-12 -->
+        </div> <!-- row -->
+    </section> <!-- container-fluid -->
+
+    <section class="container-fluid main_section">
+        <div class="row">
+            <div class="col col-12 foxContainer">
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <div class="sliderWrap">
+
+                                <div id="mainPageMainSection-slick">
+                                    <div class="slide">
+                                        <h3 class="slide-mainTitle">
+                                            Вам больше не нужен отдельный провайдер услуг телефонии!
+                                        </h3>
+                                        <p class="slide-article">
+                                            Настройте прием звонков на единый многоканальный номер, голосовое приветствие и распределение звонков на любые мобильные и стационарные телефоны
+                                        </p>
+                                        <a href="#" class="fox-btn--orange">
+                            png     Подробнее
+                                        </a>
                                     </div>
-                                </header>
-                            </div><!-- col -->
-                        </div><!-- row -->
-                    </div><!-- container -->
+                                    <div class="slide">
+                                        <h3 class="slide-mainTitle">
+                                            Вам больше не нужен отдельный провайдер услуг телефонии!
+                                        </h3>
+                                        <p class="slide-article">
+                                            Настройте прием звонков на единый многоканальный номер, голосовое приветствие и распределение звонков на любые мобильные и стационарные телефоны
+                                        </p>
+                                        <a href="#" class="fox-btn--orange">
+                                            Подробнее
+                                        </a>
+                                    </div>
+                                    <div class="slide">
+                                        <h3 class="slide-mainTitle">
+                                            Вам больше не нужен отдельный провайдер услуг телефонии!
+                                        </h3>
+                                        <p class="slide-article">
+                                            Настройте прием звонков на единый многоканальный номер, голосовое приветствие и распределение звонков на любые мобильные и стационарные телефоны
+                                        </p>
+                                        <a href="#" class="fox-btn--orange">
+                                            Подробнее
+                                        </a>
+                                    </div>
+                                </div>    <!-- sliderWrap -->
+        
+                                <span class="prevArrow">
+                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                </span>
+
+                                <span class="nextArrow">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </span>
+
+                        </div><!-- sliderWrap -->
+
+                    </div><!-- col -->
+                    <div class="col col-12 col-md-6 rightSide">
+                        <img src="/img/page_main_section_main.png" alt="">
+                    </div><!-- col -->
                 </div> <!-- row -->
             </div><!-- col col-12 -->
         </div> <!-- row -->
     </section> <!-- container-fluid -->
 
-    <section class="container-fluid">
+    <section class="container-fluid article_section">
         <div class="row">
-            <div class="col col-12">
+            <div class="col col-12 foxContainer">
                 <div class="row">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col col-12">
-                                
-                            </div><!-- col -->
-                        </div><!-- row -->
-                    </div><!-- container -->
+                    <div class="col col-12 ">
+                        <div class="article_section-content">
+                            <p class="titel">
+                                Продукты и решения
+                            </p>
+                            <p class="article">
+                                В бизнесе вы должны принять все без исключения звонки и сделать так, чтобы звонящие вам люди как можно меньше ждали на линии, а потом сразу попадали к тому, кто сможет решить их проблему. Именно для этих и множества других профессиональных задач создавалась FoxTel, лидирующая по возможностям система облачных коммуникаций.
+                            </p>
+                            <a href="#" class="fox-btn--transparent">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div><!-- col -->
                 </div> <!-- row -->
             </div><!-- col col-12 -->
         </div> <!-- row -->
     </section> <!-- container-fluid -->
 
+    <section class="container-fluid services_section">
+        <div class="row">
+            <div class="col col-12 foxContainer">
+                <div class="row">
+                    <div class="col col-12 col-md-4">
+                        <figure>
+                            <img src="/img/page_main_section_product_1.svg" alt="">
+                            <figcaption>
+                                <h2 class="title">
+                                    Виртуальная АТС
+                                </h2>
+                                <p class="article">
+                                    Быстрая и недорогая телефонизация вашего офиса. Без затрат на оборудование и без проводов
+                                </p>
+                                <p class="price">
+                                    от
+                                    <span class="price-value">
+                                        199
+                                    </span>
+                                    руб.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div><!-- col -->
+
+
+                    <div class="col col-12 col-md-4">
+                        <figure>
+                            <img src="/img/page_main_section_product_2.svg" alt="">
+                            <figcaption>
+                                <h2 class="title">
+                                    Виртуальные номера
+                                </h2>
+                                <p class="article">
+                                    Быстрая и недорогая телефонизация вашего офиса. Без затрат на оборудование и без проводов
+                                </p>
+                                <p class="price">
+                                    от
+                                    <span class="price-value">
+                                        69
+                                    </span>
+                                    руб.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div><!-- col -->
+
+
+                        <div class="col col-12 col-md-4">
+                            <figure>
+                                <img src="/img/page_main_section_product_3.svg" alt="">
+                                <figcaption>
+                                    <h2 class="title">
+                                        Интеграция
+                                    </h2>
+                                    <p class="article">
+                                        Быстрая и недорогая телефонизация вашего офиса. Без затрат на оборудование и без проводов
+                                    </p>
+                                    <p class="price">
+                                        от
+                                        <span class="price-value">
+                                            355
+                                        </span>
+                                        руб.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div><!-- col -->
+                </div> <!-- row -->
+            </div><!-- col col-12 -->
+        </div> <!-- row -->
+    </section> <!-- container-fluid -->
+
+    <section class="container-fluid whyMe_section BG--finalGray">
+        <div class="row">
+            <div class="col col-12 foxContainer">
+               <div class="row">
+                    <div class="col col-12 col-md-4 leftSide">
+                        <ul class="listRecord">
+                            <li>
+                                <img src="/img/page_main_section_why_me_1.svg" alt="">
+                                40% доля рынка
+                            </li>
+                            <li>
+                                <img src="/img/page_main_section_why_me_2.svg" alt="">
+                                18 лет на рынке
+                            </li>
+                            <li class="active">
+                                <img src="/img/page_main_section_why_me_3.svg" alt="">
+                                48 000 клиентов
+                            </li>
+                            <li>
+                                <img src="/img/page_main_section_why_me_4.svg" alt="">
+                                24/7 техподдержка
+                            </li>
+                            <li>
+                                <img src="/img/page_main_section_why_me_5.svg" alt="">
+                                61 город России
+                            </li>
+                        </ul>
+                    </div><!-- col -->
+                    <div class="col col-12 col-md-8 rightSide">
+                        <div class="mainArticle">
+                            <img src="/img/page_main_section_why_me_answer.svg" alt="">
+                            <p class="title">
+                                Почему мы?
+                            </p>
+                            <p class="dd">
+                                Мы делаем облачные коммуникации для бизнеса - лучшее решение для связи с клиентами и взаимодействия между сотрудниками
+                            </p>
+                        </div>
+                        <p class="article">
+                            В бизнесе вы должны принять все без исключения звонки и сделать так, чтобы звонящие вам люди как можно меньше ждали на линии, а потом сразу попадали к тому, кто сможет решить их проблему. Именно для этих и множества других профессиональных задач создавалась лидирующая система облачных коммуникаций
+                        </p>
+                    </div><!-- col -->
+               </div> <!-- row -->
+            </div><!-- col col-12 -->
+        </div> <!-- row -->
+    </section> <!-- container-fluid -->
+
+    <section class="container-fluid reviewSlider_section">
+        <div class="row">
+            <div class="col col-12 foxContainer">
+                <div class="row">
+                    <div class="col col-12">
+                        <div class="pageHomeSliderReview">
+                            <p class="themeTitle">
+                                Отзывы наших клиентов
+                            </p>
+
+                            <div class="slider" id="pageHomeSliderReview">
+                                <div class="slide">
+                                    <p class="textReview">
+                                        “Основная стратегическая задача FoxTel в отношении управления персоналом заключается в формировании команды квалифицированных и профессиональных работников, стремящихся реализовать свой потенциал в достижении целей компании. Возможности IP-телефонии отвечают потребностям современного бизнеса. И главное - нет привязки к конкретной географии, вы можете создать офис или рабочее место в любой точке мира. Виртуальная АТС соединит всех сотрудников в единую сеть, создав эффективный инструмент коммуникации с клиентами и партнерами”
+                                    </p>
+                                    <figure>
+                                        <img src="https://www.thelittleredcompany.com/tlrc/wp-content/uploads/2013/10/Lady-Beatle-HomepageV2.jpg" alt="">
+                                        <figcaption>
+                                            <div class="name">
+                                                Наталья Ненашева
+                                            </div>
+                                            <div class="title">
+                                                Руководитель Центробанка
+                                            </div>
+                                            <a href="sitefromfeedback.ru" class="link">
+                                                sitefromfeedback.ru
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div><!-- slide -->
+
+                                <div class="slide">
+                                    <p class="textReview">
+                                        “Основная стратегическая задача FoxTel в отношении управления персоналом заключается в формировании команды квалифицированных и профессиональных работников, стремящихся реализовать свой потенциал в достижении целей компании. Возможности IP-телефонии отвечают потребностям современного бизнеса. И главное - нет привязки к конкретной географии, вы можете создать офис или рабочее место в любой точке мира. Виртуальная АТС соединит всех сотрудников в единую сеть, создав эффективный инструмент коммуникации с клиентами и партнерами”
+                                    </p>
+                                    <figure>
+                                        <img src="https://www.thelittleredcompany.com/tlrc/wp-content/uploads/2013/10/Lady-Beatle-HomepageV2.jpg" alt="">
+                                        <figcaption>
+                                            <div class="name">
+                                                Наталья Ненашева
+                                            </div>
+                                            <div class="title">
+                                                Руководитель Центробанка
+                                            </div>
+                                            <a href="sitefromfeedback.ru" class="link">
+                                                sitefromfeedback.ru
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div><!-- slide -->
+
+                                <div class="slide">
+                                    <p class="textReview">
+                                        “Основная стратегическая задача FoxTel в отношении управления персоналом заключается в формировании команды квалифицированных и профессиональных работников, стремящихся реализовать свой потенциал в достижении целей компании. Возможности IP-телефонии отвечают потребностям современного бизнеса. И главное - нет привязки к конкретной географии, вы можете создать офис или рабочее место в любой точке мира. Виртуальная АТС соединит всех сотрудников в единую сеть, создав эффективный инструмент коммуникации с клиентами и партнерами”
+                                    </p>
+                                    <figure>
+                                        <img src="https://www.thelittleredcompany.com/tlrc/wp-content/uploads/2013/10/Lady-Beatle-HomepageV2.jpg" alt="">
+                                        <figcaption>
+                                            <div class="name">
+                                                Наталья Ненашева
+                                            </div>
+                                            <div class="title">
+                                                Руководитель Центробанка
+                                            </div>
+                                            <a href="sitefromfeedback.ru" class="link">
+                                                sitefromfeedback.ru
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div><!-- slide -->
+                            </div><!-- #pageHomeSliderReview -->
+                            <span class="prevArrow">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </span>
+
+                            <span class="nextArrow">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </span>
+                        </div><!-- pageHomeSliderReview -->
+                    </div><!-- col -->
+                </div><!-- row -->
+            </div><!-- col col-12 -->
+        </div> <!-- row -->
+    </section> <!-- container-fluid -->
+
+    <section class="container-fluid homeFinal_section">
+        <div class="row">
+            <div class="col col-12 foxContainer">
+                <div class="content">
+                        <figure>
+                            <figcaption>
+                                <p class="themeTitle">
+                                    Мы всегда рады вам помочь
+                                </p>
+                                <p class="article">
+                                    Наша поддержка работает 24 часа 7 дней в неделю
+                                </p>
+                            </figcaption>
+                            <img src="/img/clock.png" alt="clock">
+                        </figure>
+        
+                        <a href="tel:88001000000" class="phone">
+                            8 800 100 00 00
+                        </a>
+                </div><!-- content -->
+            </div><!-- col col-12 -->
+        </div> <!-- row -->
+    </section> <!-- container-fluid -->
+
+    <section class="container-fluid addATC_section">
+        <div class="row">
+            <div class="col col-12 foxContainer">
+                <div class="content">
+                    <p class="title">
+                        Подключите виртуальную АТС  прямо сейчас
+                    </p>
+                    <p class="article">
+                        Воспользоваться нашими услугами можно позвонив по телефону, перейдя в наш интернет магазин или оставив онлайн заявку
+                    </p>
+                    <div class="row">
+
+                        <div class="col col-12 col-md-4">
+                            <figure>
+                                <img src="/img/shop.svg" alt="">
+                                <div class="fox-btn--orange">
+                                    Интернет магазин
+                                </div>
+                            </figure>
+                        </div><!-- col -->
+
+                        <div class="col col-12 col-md-4">
+                            <figure>
+                                <img src="/img/phone.svg" alt="">
+                                <a href="tel:+7(495)77-77-77" class="phone">
+                                    +7 (495) 77-77-77
+                                </a>
+                            </figure>
+                        </div><!-- col -->
+
+                        <div class="col col-12 col-md-4">
+                            <figure>
+                                <img src="/img/doc.svg" alt="">
+                                <div class="fox-btn--orange">
+                                    Оставить заявку
+                                </div>
+                            </figure>
+                        </div><!-- col -->
+
+                    </div><!-- row -->
+                </div><!-- content -->
+            </div><!-- col col-12 -->
+        </div> <!-- row -->
+    </section> <!-- container-fluid -->
+    
     <script src="/js/libs/jquery-3.3.1.min.js"   ></script>
     <script src="/js/libs/bootstrap.min.js"     defer ></script>
     <script src="/js/libs/numerator.js"         defer ></script>
     <script src="/js/libs/slow_scroll.js"       defer ></script>
-    <script src="/js/libs/slick.min.js"         defer ></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
     <script src="/js/libs/wow.js"               defer ></script>
     <script src="/js/my.js"                     defer ></script>
     <script>

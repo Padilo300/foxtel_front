@@ -1,0 +1,60 @@
+.reviewSlider_section{
+    padding-bottom: 50px;
+    .pageHomeSliderReview{
+        .prevArrow,
+        .nextArrow{
+            position: absolute;
+            top: 120px;
+            font-size: 2em;
+            cursor: pointer;
+        }
+        .nextArrow{
+            right: 0;
+        }
+        .prevArrow{
+            left: 0;
+        }
+    }
+    #pageHomeSliderReview{
+        position: relative;
+        
+        
+        .slide{
+            .textReview{
+                max-width: 920px;
+                margin: 0 auto;
+                font-size: 16px;
+                line-height: 27px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            figure{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    margin: 0 30px 0 0;
+                }
+                figcaption{
+                    .name{
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    .title{
+                        font-size: 14px;
+                        line-height: 26px;
+                    }
+                    .link{
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $colorText-lightblue;
+                    }
+                }
+            }
+        }
+      
+    }
+}

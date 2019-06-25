@@ -33,10 +33,22 @@
 @import 'footer/footer'     ;
 
 // pages HOME
-@import 'pages/home/first_section';
+@import 'pages/home/first_section'          ;
+@import 'pages/home/main_section'           ;
+@import 'pages/home/article_section'        ;
+@import 'pages/home/services_section'       ;
+@import 'pages/home/whyMe_section'          ;
+@import 'pages/home/reviewSlider_section'   ;
+@import 'pages/home/homeFinal_section'      ;
+@import 'pages/home/addATC_section'         ;
 
 
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap');
 body{
-    background: #fff;
-    height: 35vh;
+    color: $colorText-blue;
+    font-family: 'Lato', sans-serif;
 }

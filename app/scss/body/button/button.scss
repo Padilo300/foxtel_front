@@ -1,0 +1,49 @@
+.fox-btn{
+    width: 160px;
+    height: 37px;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 0.4s;
+    cursor: pointer;
+    &:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.fox-btn--orange{
+    @extend .fox-btn;
+    background-color: $bg-orange;
+    &:hover{
+        box-shadow: 0 0 8px 0 #ccc;
+    }
+}
+
+.fox-btn--transparent{
+    @extend .fox-btn;
+    background-color: transparent;
+    border: 1px solid $bg-orange;
+    color: $bg-orange;
+    margin: 0 auto;
+    &:hover{
+        background-color: $bg-orange;
+        color: #fff;
+    }
+}
+
+.fox-tel{
+    color: #253757;
+    font-family: Lato;
+    font-size: 1.15em;
+    position: relative;
+    display: block;
+}
+.fox-tel--icon{
+    @extend .fox-tel;
+    img{
+        padding: 0 5px 0 0;
+    }
+}
