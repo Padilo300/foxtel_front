@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/ico/triangle.png" type="image/x-icon">
     <title>Padilo</title>
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
@@ -240,24 +241,25 @@
             <div class="col col-12 foxContainer">
                <div class="row">
                     <div class="col col-12 col-md-4 leftSide">
-                        <ul class="listRecord">
-                            <li>
+                        
+                        <ul class="listRecord" id="whyMe_sectionListRecord">
+                            <li class="whyMe_dots" data-dots="whyMe_dots-1" >
                                 <img src="/img/page_main_section_why_me_1.svg" alt="">
                                 40% доля рынка
                             </li>
-                            <li>
+                            <li class="whyMe_dots" data-dots="whyMe_dots-2">
                                 <img src="/img/page_main_section_why_me_2.svg" alt="">
                                 18 лет на рынке
                             </li>
-                            <li class="active">
+                            <li class="active whyMe_dots" data-dots="whyMe_dots-3">
                                 <img src="/img/page_main_section_why_me_3.svg" alt="">
                                 48 000 клиентов
                             </li>
-                            <li>
+                            <li class="whyMe_dots" data-dots="whyMe_dots-4">
                                 <img src="/img/page_main_section_why_me_4.svg" alt="">
                                 24/7 техподдержка
                             </li>
-                            <li>
+                            <li class="whyMe_dots" data-dots="whyMe_dots-5">
                                 <img src="/img/page_main_section_why_me_5.svg" alt="">
                                 61 город России
                             </li>
@@ -273,9 +275,29 @@
                                 Мы делаем облачные коммуникации для бизнеса - лучшее решение для связи с клиентами и взаимодействия между сотрудниками
                             </p>
                         </div>
-                        <p class="article">
-                            В бизнесе вы должны принять все без исключения звонки и сделать так, чтобы звонящие вам люди как можно меньше ждали на линии, а потом сразу попадали к тому, кто сможет решить их проблему. Именно для этих и множества других профессиональных задач создавалась лидирующая система облачных коммуникаций
-                        </p>
+                        <div class="whyMeArticleWrapp" id="whyMeArticleWrapp">
+
+                            <p class="article active" id="whyMe_dots-1">
+                                В бизнесе вы должны принять все без исключения звонки и сделать так, чтобы звонящие вам люди как можно меньше ждали на линии, а потом сразу попадали к тому, кто сможет решить их проблему. Именно для этих и множества других профессиональных задач создавалась лидирующая система облачных коммуникаций
+                            </p>
+
+                            <p class="article" id="whyMe_dots-2">
+                                !!!В бизнесе вы должны принять все без исключения звонки и сделать так, чтобы звонящие вам люди как можно меньше ждали на линии, а потом сразу попадали к тому, кто сможет решить их проблему. Именно для этих и множества других профессиональных задач создавалась лидирующая система облачных коммуникаций
+                            </p>
+
+                            <p class="article" id="whyMe_dots-3">
+                                22В бизнесе вы должны принять все без исключения звонки и сделать так, чтобы звонящие вам люди как можно меньше ждали на линии, а потом сразу попадали к тому, кто сможет решить их проблему. Именно для этих и множества других профессиональных задач создавалась лидирующая система облачных коммуникаций
+                            </p>
+
+                            <p class="article" id="whyMe_dots-4">
+                                333В бизнесе вы должны принять все без исключения звонки и сделать так, чтобы звонящие вам люди как можно меньше ждали на линии, а потом сразу попадали к тому, кто сможет решить их проблему. Именно для этих и множества других профессиональных задач создавалась лидирующая система облачных коммуникаций
+                            </p>
+                            <p class="article" id="whyMe_dots-5">
+                                В бизнесе вы должны принять все без исключения звонки и сделать так, чтобы звонящие вам люди как можно меньше ждали на линии, а потом сразу попадали к тому, кто сможет решить их проблему. Именно для этих и множества других профессиональных задач создавалась лидирующая система облачных коммуникаций
+                            </p>
+
+
+                        </div>
                     </div><!-- col -->
                </div> <!-- row -->
             </div><!-- col col-12 -->
@@ -435,9 +457,244 @@
             </div><!-- col col-12 -->
         </div> <!-- row -->
     </section> <!-- container-fluid -->
+
+
+    <section class="container-fluid footer_section">
+            <div class="row">
+                <div class="col col-12 foxContainer">
+                    <div class="content">
+                        <div class="pa-col">
+                            <h5 class="title">
+                                О компании
+                            </h5>
+                            <ul class="listNav">
+                                <li>
+                                    <a href="#">
+                                        Компания
+                                    </a> 
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Команда
+                                    </a> 
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Отзывы
+                                    </a> 
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Лицензии
+                                    </a> 
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Документация
+                                    </a> 
+                                </li>
+                            </ul>
+                        </div><!-- pa-col -->
+
+
+                        <div class="pa-col">
+                                <h5 class="title">
+                                    Виртуальная АТС
+                                </h5>
+                                <ul class="listNav">
+                                    <li>
+                                        <a href="#">
+                                                О продукте
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Команда
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                                Как начать пользоваться
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                                Возможности
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Решения
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                                Поддержка
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Стоимость
+                                        </a> 
+                                    </li>
+                                </ul>
+                            </div><!-- pa-col -->
+
+                            <div class="pa-col">
+                                    <h5 class="title">
+                                        Виртуальные номера
+                                    </h5>
+                                    <ul class="listNav">
+                                            
+                                        <li>
+                                            <a href="#">
+                                                    Возможности
+                                            </a> 
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                    Городские номера
+                                            </a> 
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                    Многоканальные номера
+                                            </a> 
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                    Номера 8-800
+                                            </a> 
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                    Красивые номера
+                                            </a> 
+                                        </li>
+                                    </ul>
+                                </div><!-- pa-col -->
+
+                                <div class="pa-col">
+                                        <h5 class="title">
+                                            Решения
+                                        </h5>
+                                        <ul class="listNav">
+                                            <li>
+                                                <a href="#">
+                                                    Call-трекинг
+                                                </a> 
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    IP телефония
+                                                </a> 
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Он-лайн консультант
+                                                </a> 
+                                            </li>
+                                        </ul>
+                                    </div><!-- pa-col -->
+
+                                    <div class="pa-col">
+                                            <h5 class="title">
+                                                    <svg width="99" height="13" viewBox="0 0 99 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <rect width="99" height="13" fill="url(#pattern0)"/>
+                                                        <defs>
+                                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                        <use xlink:href="#image0" transform="translate(0 -0.012574) scale(0.00240385 0.0183062)"/>
+                                                        </pattern>
+                                                        <image id="image0" width="416" height="56" xlink:href="data:image/png;base64,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"/>
+                                                        </defs>
+                                                    </svg>
+                                            </h5>
+                                            <ul class="listNav">
+                                                <li>
+                                                    <a class="adress">
+                                                        220030, Россия, г. Москва, 
+                                                        ул. К. Маркса, 29, офис 2012
+                                                    </a> 
+                                                </li>
+                                                <li> 
+                                                    <a href="tel:8 800 100 00 00" class="text-orange">
+                                                        <b>
+                                                            8 800 100 00 00
+                                                        </b>
+                                                    </a> 
+                                                    <span class="placeText">
+                                                        Служба поддержки и продаж
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <a class="foxtel">
+                                                        © 2019 FoxTel
+                                                    </a> 
+                                                </li>
+                                                <li>
+                                                    <a class="polici">
+                                                        Политика обработки персональных данных
+                                                    </a> 
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <small>
+                                                            Договор-оферта
+                                                        </small>
+                                                    </a> 
+                                                </li>
+                                                <li class="wrapSocialLink">
+                                                    <a href="">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g opacity="0.9">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.38323 5.38323 0 12 0C18.6173 0 24 5.38323 24 12C24 18.6163 18.6163 24 12 24C5.38323 24 0 18.6163 0 12ZM13.0321 12.4227H14.9845L15.2373 9.96377H13.0331V8.51847C13.0331 7.97515 13.3932 7.84851 13.6465 7.84851H15.2025V5.4611L13.0587 5.45288C10.6804 5.45288 10.139 7.23316 10.139 8.37249V9.96329H8.76379V12.4227H10.139V19.3814H13.0321V12.4227Z" fill="white"/>
+                                                                </g>
+                                                            </svg>
+                                                    </a>
+                                                    <a href="">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#E8E9E9"/>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5452 17.263H12.487C12.487 17.263 12.7715 17.2317 12.9168 17.0752C13.0505 16.9314 13.0462 16.6615 13.0462 16.6615C13.0462 16.6615 13.0278 15.3977 13.6144 15.2116C14.1926 15.0282 14.935 16.433 15.722 16.9731C16.3171 17.3819 16.7693 17.2923 16.7693 17.2923L18.8736 17.263C18.8736 17.263 19.9744 17.1952 19.4524 16.3297C19.4096 16.2589 19.1485 15.6894 17.8879 14.5193C16.5685 13.2947 16.7452 13.4928 18.3345 11.3744C19.3025 10.0843 19.6894 9.2967 19.5686 8.95936C19.4533 8.63807 18.7414 8.72299 18.7414 8.72299L16.3721 8.73775C16.3721 8.73775 16.1965 8.71379 16.0662 8.79166C15.9389 8.86802 15.857 9.046 15.857 9.046C15.857 9.046 15.482 10.0443 14.9819 10.8933C13.9269 12.6848 13.505 12.7794 13.3326 12.6682C12.9315 12.4089 13.0317 11.6266 13.0317 11.0709C13.0317 9.33478 13.295 8.6109 12.5189 8.42352C12.2614 8.36127 12.0718 8.3202 11.4132 8.31357C10.5678 8.3048 9.85229 8.31613 9.44715 8.51464C9.17762 8.64663 8.9697 8.94075 9.09633 8.95765C9.25291 8.97862 9.60758 9.05327 9.79561 9.30932C10.0384 9.6396 10.0298 10.3814 10.0298 10.3814C10.0298 10.3814 10.1693 12.4252 9.70405 12.6791C9.38468 12.8532 8.94659 12.4977 8.00602 10.8724C7.52408 10.0398 7.16022 9.11958 7.16022 9.11958C7.16022 9.11958 7.09006 8.9476 6.96492 8.85562C6.81304 8.74417 6.60084 8.70866 6.60084 8.70866L4.34942 8.72342C4.34942 8.72342 4.01144 8.73283 3.88738 8.87979C3.777 9.01049 3.87861 9.28087 3.87861 9.28087C3.87861 9.28087 5.64124 13.4047 7.63703 15.4828C9.46704 17.3881 11.5452 17.263 11.5452 17.263Z" fill="#1C1F28"/>
+                                                            </svg>
+                                                    </a>
+                                                    <a href="">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0)">
+                                                                <path d="M12 23.999C18.6274 23.999 24 18.6264 24 11.999C24 5.37161 18.6274 -0.000976562 12 -0.000976562C5.37258 -0.000976562 0 5.37161 0 11.999C0 18.6264 5.37258 23.999 12 23.999Z" fill="#E8E9E9"/>
+                                                                <path d="M19.1712 12.9656V17.9129H16.3029V13.2971C16.3029 12.1382 15.8888 11.3467 14.8502 11.3467C14.0577 11.3467 13.5869 11.8796 13.3789 12.3955C13.3034 12.5799 13.284 12.836 13.284 13.0946V17.9127H10.4154C10.4154 17.9127 10.4539 10.0951 10.4154 9.28588H13.2842V10.5084C13.2784 10.518 13.2703 10.5274 13.2651 10.5366H13.2842V10.5084C13.6654 9.92184 14.3452 9.08331 15.8693 9.08331C17.7564 9.08331 19.1712 10.3163 19.1712 12.9656ZM7.41466 5.12744C6.43345 5.12744 5.7915 5.77153 5.7915 6.61776C5.7915 7.44603 6.41484 8.10872 7.37701 8.10872H7.39563C8.39609 8.10872 9.01814 7.44603 9.01814 6.61776C8.9991 5.77153 8.39609 5.12744 7.41466 5.12744ZM5.96199 17.9129H8.82947V9.28588H5.96199V17.9129Z" fill="#1C1F28"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                        </svg>
+                                                                
+                                                    </a>
+                                                    <a href="">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g opacity="0.9">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM18.2796 9.68437C18.2796 8.6784 17.4646 7.86304 16.4592 7.86304H7.91874C6.91355 7.86304 6.09875 8.6786 6.09875 9.68437V14.5683C6.09875 15.5743 6.9137 16.3897 7.91874 16.3897H16.4591C17.4647 16.3897 18.2794 15.5741 18.2794 14.5683V9.68437H18.2796ZM10.9705 9.59937V14.1862L14.4495 11.8929L10.9705 9.59937Z" fill="white"/>
+                                                                </g>
+                                                            </svg>
+                                                                
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- pa-col -->
+
+
+                    </div><!-- content  -->
+                </div><!-- col col-12 -->
+            </div> <!-- row -->
+        </section> <!-- container-fluid -->
     
-    <script src="/js/libs/jquery-3.3.1.min.js"   ></script>
-    <script src="/js/libs/bootstrap.min.js"     defer ></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/js/libs/numerator.js"         defer ></script>
     <script src="/js/libs/slow_scroll.js"       defer ></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>

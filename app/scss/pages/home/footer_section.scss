@@ -1,0 +1,97 @@
+.footer_section{
+    background: $bg-dark;
+    .content{
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 992px){
+            flex-direction: column;
+            align-items: center;
+        }
+        .pa-col{
+            max-width: 222px;
+            
+            .title{
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 700;
+                padding-bottom: 30px;
+                margin: 0;
+                position: relative;
+
+
+                
+                &:after{
+                    @media screen and (max-width: 992px){
+                        display: block;
+                        position: absolute;
+                        content: '\f107';
+                        font-family: FontAwesome;
+                        font-style: normal;
+                        font-weight: normal;
+                        right: -23px;
+                        top: 0;
+                    }
+                    
+                }
+                @media screen and (max-width: 992px){
+                    text-align: center;
+                    cursor: pointer;
+                    width: max-content;
+                    margin: 0 auto;
+                }
+            }
+            .listNav{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                transition: all 0.4s;
+
+                @media screen and (max-width: 992px){
+                    opacity: 0;
+                    height: 1px;
+                    overflow: hidden;
+                }
+                &.active{
+                    opacity: 1;
+                    height: 200px;
+                }
+                li{
+                    padding: 0 0 30px 0;
+                    a{
+                        opacity: 0.9;
+                        color: rgba(255, 255, 255, 0.75);
+                        font-size: 14px;
+                        font-weight: 400;
+                        display: block;
+                        &.adress{
+                            color: #ffffff;
+                            line-height: 26px;
+                            max-width: 196px;;
+                        }
+                        &.foxtel{
+                            color: #fff;
+                        }
+                        &.polici{
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 15px;
+                            max-width: 130px;
+                        }
+                    }
+                    .placeText{
+                        display: block;
+                        opacity: 0.9;
+                        color: #acb1b3;
+                    }
+                    &.wrapSocialLink{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 141px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

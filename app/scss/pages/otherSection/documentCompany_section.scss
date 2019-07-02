@@ -1,0 +1,25 @@
+.documentCompany_section{
+    .content{
+        padding: 50px 0;
+        .title{
+            *{
+                font-size: 30px;
+                font-weight: 900;   
+                color: $colorText-blue;
+                text-align: center;
+            }
+            margin: 0 0 40px 0;
+        }
+        .article{
+            *{
+                color: $colorText-blue;
+                font-size: 16px;
+                line-height: 27px;
+                a{
+                    color: $colorText-lightblue;
+                }
+            }
+            margin: 0 0 40px 0;
+        }
+    }
+}

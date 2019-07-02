@@ -1,15 +1,3 @@
-// Подключаем  Bootstrap
-
-// Требуемое
-@import "../../node_modules/bootstrap/scss/functions" ;
-@import "../../node_modules/bootstrap/scss/variables" ;
-@import "../../node_modules/bootstrap/scss/mixins"    ;
-
-// Опциональное
-@import "../../node_modules/bootstrap/scss/reboot"            ; // normalize
-@import "../../node_modules/bootstrap/scss/grid"              ; // сетка
-@import "../../node_modules/bootstrap/scss/modal"             ; // модальные окна
-@import "../../node_modules/bootstrap/scss/utilities/_text"   ; // выравнивание текста
 
 // переменные
 @import "variable/variable"   ; 
@@ -33,16 +21,24 @@
 @import 'footer/footer'     ;
 
 // pages HOME
-@import 'pages/home/first_section'          ;
-@import 'pages/home/main_section'           ;
-@import 'pages/home/article_section'        ;
-@import 'pages/home/services_section'       ;
-@import 'pages/home/whyMe_section'          ;
-@import 'pages/home/reviewSlider_section'   ;
-@import 'pages/home/homeFinal_section'      ;
-@import 'pages/home/addATC_section'         ;
+@import 'pages/home/first_section'         ;
+@import 'pages/home/main_section'          ;
+@import 'pages/home/article_section'       ;
+@import 'pages/home/services_section'      ;
+@import 'pages/home/whyMe_section'         ;
+@import 'pages/home/reviewSlider_section'  ;
+@import 'pages/home/homeFinal_section'     ;
+@import 'pages/home/addATC_section'        ;
+@import 'pages/home/footer_section'        ;
 
-
+@import 'pages/otherSection/addNav_section'             ;
+@import 'pages/otherSection/wallpaper_section'          ;
+@import 'pages/otherSection/aboutCompany_section'       ;
+@import 'pages/otherSection/teamCompany_section'        ;
+@import 'pages/otherSection/rewiewCompany_section'      ;
+@import 'pages/otherSection/sertifi_section'            ;
+@import 'pages/otherSection/documentCompany_section'    ;
+@import 'pages/otherSection/itemDocument'               ;
 
 
 

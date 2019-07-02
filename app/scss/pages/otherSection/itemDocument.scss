@@ -1,0 +1,26 @@
+.itemDocument{
+    figure{
+        display: flex;
+        .img{
+            margin: 0 47px 0 0;
+
+        }
+        figcaption{
+            .btnWrap{
+                max-width: 230px;
+                display: flex;
+                justify-content: space-between;
+                .size{
+                    color: #dadada;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+                .link{
+                    color: $colorText-lightblue;
+                }
+            }
+            
+        }
+    }
+}

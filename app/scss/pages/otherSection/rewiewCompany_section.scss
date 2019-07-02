@@ -1,0 +1,134 @@
+.rewiewCompany_section{
+    .content{
+        padding: 50px 0;
+        .title{
+            *{
+                font-size: 30px;
+                font-weight: 900;   
+                color: $colorText-blue;
+            }
+            margin: 0 0 40px 0;
+        }
+        .article{
+            *{
+                color: $colorText-blue;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27px;
+            }
+            margin: 0 0 40px 0;
+        }
+        
+        .rewiewWrap{
+            .accordion{
+                .card{
+                    border-radius: unset !important;
+                    margin-bottom: 30px !important;
+                    border: 1px solid #c4c4c4;
+                    padding: 0 40px;
+                    @media screen and (max-width:992px){
+                        padding: 0 5px;
+                    }
+                    .card-header{
+                        border-radius: unset !important;
+                        background: transparent !important;
+                        padding: 0;
+                        height: 68px;
+                        border: none;
+                        @media screen and (max-width:992px){
+                            height: auto;
+                            min-height: 68px;
+                        }
+                        >h2{
+                            height: 100%;
+                            min-height: 68px;
+                        }
+                        button{
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            min-height: 68px;
+                            &::before{
+                                transition: all 0.4s;
+                                opacity: 0;
+                                color: $colorText-blue;
+                            }
+                            &::after{
+                                transition: all 0.4s;
+                                opacity: 0;
+                                color: $colorText-blue;
+                            }
+                            &[aria-expanded=false]{
+                                
+                                &::before{
+                                    display: block;
+                                    position: absolute;
+                                    content: '\f107';
+                                    font-family: FontAwesome;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    right: 0;
+                                    top: 10%;
+                                    font-size: 30px;
+                                    opacity: 1;
+                                }
+                            }
+                            &[aria-expanded=true]{
+                                &::after{
+                                    display: block;
+                                    position: absolute;
+                                    content: '\f106';
+                                    font-family: FontAwesome;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    right: 0;
+                                    top: 10%;
+                                    font-size: 30px;
+                                    opacity: 1;
+                                }
+                            }
+                           
+                            p{
+
+                                font-size: 17px;
+                                font-weight: 700;
+                                text-align: left;
+                                color: $colorText-blue;
+                                max-width: 500px;
+                                margin: 0;
+                            };
+                        }
+                    }
+                    .card-body{
+                        .wrapFugurePreson{
+                            .img{
+                                border-radius: 100%;
+                                overflow: hidden;
+                                width: 81px;
+                                height: 80px;
+                                margin: 0 35px 0 0;
+                                img{
+                                    display: block;
+                                    width: 100%;    
+                                }
+                            }
+                            figcaption{
+                                .name{
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 27px;
+                                }
+                                .position{
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 26px;
+                                    color: #64798a;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

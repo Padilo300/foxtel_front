@@ -29,4 +29,17 @@ $(document).ready(function () {
         prevArrow: $('.pageHomeSliderReview .prevArrow'),
         nextArrow: $('.pageHomeSliderReview .nextArrow'),
     });
+
+    $('#whyMe_sectionListRecord  .whyMe_dots').on('click', function(){
+        $('#whyMe_sectionListRecord  .whyMe_dots').removeClass('active');
+        $(this).addClass('active');
+        var dotsId = $(this).data('dots');
+        $('#whyMeArticleWrapp .article').removeClass('active');
+        $('#'+dotsId).addClass('active');
+    });
+
+    $('.footer_section .title').on('click',function(){
+        $(this).siblings(".listNav").toggleClass('active');
+    });
+
 });
