@@ -6,6 +6,7 @@
 // special animation->placeholder; castom browserScrollBar
 @import "special/special.scss"      ;
 @import "special/placeholder.scss"  ;
+@import "special/flex.scss"  ;
 
 // head
 @import "head/header"       ;
@@ -39,12 +40,39 @@
 @import 'pages/otherSection/sertifi_section'            ;
 @import 'pages/otherSection/documentCompany_section'    ;
 @import 'pages/otherSection/itemDocument'               ;
+@import 'pages/otherSection/howTo_section'              ;
+@import 'pages/otherSection/opportunity_section'        ;
+@import 'pages/otherSection/variant_product'            ;
+@import 'pages/otherSection/opportunity-grid'           ;
+@import 'pages/otherSection/support_section'            ;
+@import 'pages/otherSection/section_pay'                ;
+@import 'pages/otherSection/section_priority'           ;
+@import 'pages/otherSection/fullBannerText_section'     ;
+@import 'pages/otherSection/zizazagaArticle_section'    ;
+@import 'pages/otherSection/section_searhResult'        ;
 
 
+@import 'pages/part/card'                       ;
+@import 'pages/part/table'                      ;
+@import 'pages/part/slider_ourCapabilities'     ;
+@import 'pages/part/stepByStep_section'         ;
+@import 'pages/part/partners_section'           ;
+@import 'pages/part/sliderSpecialHome'          ;
+
+
+
+/**
+ * Fix fonts that render as bold in Firefox
+ *
+ * Put this near the top of your style.css
+ * Before any overriding styles
+ */
 
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap');
 body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: $colorText-blue;
     font-family: 'Lato', sans-serif;
 }

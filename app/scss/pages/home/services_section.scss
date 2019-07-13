@@ -1,5 +1,6 @@
 .services_section{
     background-color: $bg-lightGray;
+    padding-bottom: 30px;
     figure{
         padding-top: 50px;
         img{
@@ -7,6 +8,22 @@
             width: 80px;
             margin: 0 auto;
         }
+
+        img.active{
+            position: absolute;
+            bottom: -35px;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: all 0.4s;
+            @media screen and (max-width:768px){
+                display: none;
+            }
+            &.on{
+                opacity: 1  ;
+            }
+        }
+
         figcaption{
             .title{
                 text-align: center;

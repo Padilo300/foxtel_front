@@ -1,0 +1,14 @@
+.fullBannerText_section{
+    background: #1a75bc;
+    min-height: 220px;
+    padding-top: 50px;
+    @media screen and (max-width: 768px){
+        padding-bottom: 50px;
+    }
+    .fullBannerText_section-title{
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+}

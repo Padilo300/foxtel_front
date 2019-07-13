@@ -1,25 +1,43 @@
 .itemDocument{
+
+    border: 1px solid #ecf0f5;
+    height: 80px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin: 15px auto;
+    @media screen and (max-width: 768px) {
+        height: max-content;
+    }
     figure{
         display: flex;
+        margin: 0;
         .img{
             margin: 0 47px 0 0;
-
         }
         figcaption{
-            .btnWrap{
-                max-width: 230px;
-                display: flex;
-                justify-content: space-between;
-                .size{
-                    color: #dadada;
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 26px;
+            p{
+                margin: 0;
+                &:first-child{
+                    @media screen and (max-width: 768px) {
+                        margin: 0 0 15px 0;
+                    }
                 }
-                .link{
-                    color: $colorText-lightblue;
+                &.btnWrap{
+                    max-width: 230px;
+                    display: flex;
+                    justify-content: space-between;
+                    .size{
+                        color: #dadada;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 26px;
+                    }
+                    .link{
+                        color: $colorText-lightblue;
+                    }
                 }
             }
+            
             
         }
     }

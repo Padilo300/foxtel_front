@@ -1,0 +1,38 @@
+.opportunity-grid{
+    .item{
+        min-width: 350px;
+        margin-bottom: 45px;
+
+        @media screen and (max-width: 768px){
+            text-align: center;
+        }
+        .item-title{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 27px;
+            color: #253757;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #253757;
+        }
+    }
+}
+
+.opportunity-grid--img{
+    @extend .opportunity-grid;
+    img{
+        margin: 20px auto;
+        display: block;
+    }
+    .wrapImg{
+        >img.one{
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    
+}

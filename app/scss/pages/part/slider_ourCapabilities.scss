@@ -1,0 +1,77 @@
+
+.slider_ourCapabilities{
+    padding-bottom: 50px;
+    background: $bg-strongBlue;
+    .pageHomeSliderReview{
+        .prevArrow,
+        .nextArrow{
+            position: absolute;
+            font-size: 2em;
+            bottom: 0;
+            top: auto;
+            cursor: pointer;
+        }
+        .nextArrow{
+            right: 0;
+        }
+        .prevArrow{
+            left: 0;
+        }
+    }
+    #slider_ourCapabilities{
+        position: relative;
+        .mainPageMainSection-slickDots{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 80px 0 0 0;
+            li{
+                width: 6px;
+                height: 6px;
+                border: 1px solid #000;
+                border-radius: 100px;
+                position: relative;
+                margin: 0 4px;
+                cursor: pointer;
+                    &.slick-active{
+                        &::before{
+                            content: '';
+                            width: 4px;
+                            height: 4px;
+                            background: #000;                    
+                            position: absolute;
+                        }
+                    }
+                button{
+                    display: none;
+                }
+            }
+        }
+        
+        .slide{
+            .wrap{
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: 768px){
+                    flex-direction: column;
+                }
+                figure{
+                    max-width: 350px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    align-content: center;
+                    img{
+                        margin: 50px 0;
+                    }
+                    figcaption{
+
+                    }
+                }
+            }
+        }
+      
+    }
+}

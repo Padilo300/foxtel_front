@@ -79,6 +79,9 @@
                             font-weight: 400;
                             line-height: 26px;
                             color: #64798a;
+                            @media screen and (max-width: 992px){
+                                text-align: center;
+                            }
                         }
                     }
                 }

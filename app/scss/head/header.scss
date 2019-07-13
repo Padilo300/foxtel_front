@@ -6,8 +6,16 @@ $mobile: 1100px;
     align-items: center;
     z-index: 1000;
     position: relative;
+    &.search{
+      padding: 30px 0 50px 0 ;
+    }
     @media screen and (max-width: $mobile){
         flex-direction: column;
+    }
+    .search{
+      width: 70%;
+      border: none;
+      padding: 5px 15px;
     }
     .header-nav{
         position: relative;

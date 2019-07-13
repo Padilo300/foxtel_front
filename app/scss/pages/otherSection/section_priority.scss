@@ -1,0 +1,12 @@
+.section_priority{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $bg-lightGray;
+    .textSub{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .wrapTable{
+        overflow: auto;
+    }
+}

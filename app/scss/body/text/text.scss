@@ -1,7 +1,49 @@
 .themeTitle{
-    font-family: Lato;
     font-size: 30px;
     font-weight: 900;
     text-align: center;
-    font-family: Lato;
+    margin: 40px auto 20px auto;
 }
+
+.title--orange{
+    color: #f18518;
+    font-size: 24px;
+    font-weight: 400;
+}
+.opportunity-title{
+    color: #f18518;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 0 0 90px;
+    margin: 40px 0;
+
+    @media screen and (max-width: 768px){
+        padding: 0;
+        text-align: center;
+    }
+    &:before{
+        @media screen and (max-width: 768px){
+            display: none;
+        }
+        width: 67px;
+        height: 12px;
+        background: #f18518;
+        position: absolute;
+        content: '';
+        top: 50px;
+        left: 0;
+    }
+}
+
+.opportunity-p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #253757;
+    max-width: 986px;
+}
+.themeText{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+  }

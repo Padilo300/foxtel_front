@@ -30,3 +30,55 @@
         }
     }
 }
+
+.wallpaper_section--atc{
+    @extend .wallpaper_section;
+    .content{
+        background: url('../img/Untitled-1.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+
+        @media screen and (max-width: 768px){
+            background: none;
+        }
+    }
+}
+
+.wallpaper_section--numbers{
+    @extend .wallpaper_section;
+    .content{
+        background: url('../img/Untitled-21.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+
+        @media screen and (max-width: 768px){
+            background: none;
+        }
+    }
+}
+
+.wallpaper_section--decision{
+    @extend .wallpaper_section;
+    .content{
+        background: url('../img/Untitled-1 (2).png');
+        background-repeat: no-repeat;
+        background-position: center right;
+
+        @media screen and (max-width: 768px){
+            background: none;
+        }
+    }
+}
+
+.wallpaper_section--search{
+    @extend .wallpaper_section;
+    .content{
+        background: url('../img/Untitled-2321.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+
+        @media screen and (max-width: 768px){
+            background: none;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.stepByStep_section{
+    background: url('../img/line_section.png') $bg-lightGray;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    padding-bottom: 150px;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @media screen and (max-width:768px){
+            flex-direction: column;
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            width: 150px;
+            position: relative;
+
+            @media screen and (max-width:768px){
+                margin: 50px auto;
+            }
+            &:after{
+                position: absolute;
+                content: '\f105';
+                font-family: FontAwesome;
+                width: 10px;
+                height: 10px;
+                right: -50%;
+                top: 40px;
+                font-size: 2em;
+                @media screen and (max-width:900px){
+                    right: -40%;
+                }
+                @media screen and (max-width:830px){
+                    right: -30%;
+                }
+                @media screen and (max-width:768px){
+                    content: '\f107';
+                    top: auto;
+                    bottom: -22px;
+                    right: 50%;
+                }
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            figcaption{
+                text-align: center;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 27px;
+            }
+        }
+    }
+}

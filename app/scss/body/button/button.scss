@@ -22,6 +22,14 @@
     }
 }
 
+.fox-btn--orangeTransp{
+    @extend .fox-btn--orange;
+    background: transparent;
+    color: $bg-orange;
+    border: 1px solid $bg-orange;
+    margin: 0 auto;
+}
+
 .fox-btn--transparent{
     @extend .fox-btn;
     background-color: transparent;
@@ -46,4 +54,25 @@
     img{
         padding: 0 5px 0 0;
     }
+}
+
+.btn-transp{
+    background: transparent;
+    width: max-content;
+    height: 27px;
+    color: #1a75bc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    border: none;
+}
+.btn_buyService{
+    width: 160px;
+    height: 37px;
+    border-radius: 20px;
+    border: 1px solid #1a75bc;
+    color: #1a75bc;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
 }

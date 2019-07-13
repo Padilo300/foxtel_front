@@ -20,6 +20,60 @@ $(document).ready(function () {
         dotsClass: 'mainPageMainSection-slickDots',
     });
 
+    $('#sliderSpecialHome').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        prevArrow: $('.sliderSpecialHome  .prevArrow'),
+        nextArrow: $('.sliderSpecialHome  .nextArrow'),
+        dotsClass: 'mainPageMainSection-slickDots',
+    });
+
+    $('#sliderSpecialHome2').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        prevArrow: $('.sliderSpecialHome  .prevArrow'),
+        nextArrow: $('.sliderSpecialHome  .nextArrow'),
+        dotsClass: 'mainPageMainSection-slickDots',
+    });
+
+    $('#sliderSpecialHome3').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        prevArrow: $('.sliderSpecialHome  .prevArrow'),
+        nextArrow: $('.sliderSpecialHome  .nextArrow'),
+        dotsClass: 'mainPageMainSection-slickDots',
+    });
+
+    $('#megaSlick').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        prevArrow: $('.sliderSpecialHome  .prevArrow'),
+        nextArrow: $('.sliderSpecialHome  .nextArrow'),
+        dotsClass: 'mainPageMainSection-slickDots',
+    });
+    
+
+
+    $('.sliderSpecialHomeSlideFigure').on('click', function(){
+        $('.sliderSpecialHomeSlideFigure .active').removeClass('on');
+        $(this).find('.active').addClass('on');
+        var index = $(this).data('slide');
+        $('#megaSlick').slick('slickGoTo', index)
+    });
+    
+
     $('#pageHomeSliderReview').slick({
         dots: false,
         infinite: true,
@@ -29,6 +83,19 @@ $(document).ready(function () {
         prevArrow: $('.pageHomeSliderReview .prevArrow'),
         nextArrow: $('.pageHomeSliderReview .nextArrow'),
     });
+
+    $('#slider_ourCapabilities').slick({
+        dots: true,
+        dotsClass: 'mainPageMainSection-slickDots',
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.pageHomeSliderReview .prevArrow'),
+        nextArrow: $('.pageHomeSliderReview .nextArrow'),
+    });
+
+    
 
     $('#whyMe_sectionListRecord  .whyMe_dots').on('click', function(){
         $('#whyMe_sectionListRecord  .whyMe_dots').removeClass('active');
@@ -42,4 +109,8 @@ $(document).ready(function () {
         $(this).siblings(".listNav").toggleClass('active');
     });
 
+
+
+   
+     new WOW().init();
 });
