@@ -7196,23 +7196,23 @@ input:focus:-ms-input-placeholder {
       .addNav_section .content nav ul li.active a {
         color: #ef781c; }
 
-.wallpaper_section .content, .wallpaper_section--atc .content, .wallpaper_section--numbers .content, .wallpaper_section--decision .content, .wallpaper_section--search .content {
+.wallpaper_section .content, .wallpaper_section--atc .content, .wallpaper_section--numbers .content, .wallpaper_section--decision .content, .wallpaper_section--search .content, .wallpaper_section--step .content {
   background: url("../img/company_bg.png");
   background-repeat: no-repeat;
   background-position: center right;
   height: 180px;
   padding: 35px 0 0 0; }
   @media screen and (max-width: 768px) {
-    .wallpaper_section .content, .wallpaper_section--atc .content, .wallpaper_section--numbers .content, .wallpaper_section--decision .content, .wallpaper_section--search .content {
+    .wallpaper_section .content, .wallpaper_section--atc .content, .wallpaper_section--numbers .content, .wallpaper_section--decision .content, .wallpaper_section--search .content, .wallpaper_section--step .content {
       background: none; } }
   @media screen and (max-width: 768px) {
-    .wallpaper_section .content .wrapText, .wallpaper_section--atc .content .wrapText, .wallpaper_section--numbers .content .wrapText, .wallpaper_section--decision .content .wrapText, .wallpaper_section--search .content .wrapText {
+    .wallpaper_section .content .wrapText, .wallpaper_section--atc .content .wrapText, .wallpaper_section--numbers .content .wrapText, .wallpaper_section--decision .content .wrapText, .wallpaper_section--search .content .wrapText, .wallpaper_section--step .content .wrapText {
       text-align: center; } }
-  .wallpaper_section .content .wrapText .title *, .wallpaper_section--atc .content .wrapText .title *, .wallpaper_section--numbers .content .wrapText .title *, .wallpaper_section--decision .content .wrapText .title *, .wallpaper_section--search .content .wrapText .title * {
+  .wallpaper_section .content .wrapText .title *, .wallpaper_section--atc .content .wrapText .title *, .wallpaper_section--numbers .content .wrapText .title *, .wallpaper_section--decision .content .wrapText .title *, .wallpaper_section--search .content .wrapText .title *, .wallpaper_section--step .content .wrapText .title * {
     color: #253757;
     font-size: 40px;
     font-weight: 900; }
-  .wallpaper_section .content .wrapText .wall-link *, .wallpaper_section--atc .content .wrapText .wall-link *, .wallpaper_section--numbers .content .wrapText .wall-link *, .wallpaper_section--decision .content .wrapText .wall-link *, .wallpaper_section--search .content .wrapText .wall-link * {
+  .wallpaper_section .content .wrapText .wall-link *, .wallpaper_section--atc .content .wrapText .wall-link *, .wallpaper_section--numbers .content .wrapText .wall-link *, .wallpaper_section--decision .content .wrapText .wall-link *, .wallpaper_section--search .content .wrapText .wall-link *, .wallpaper_section--step .content .wrapText .wall-link * {
     color: #253757;
     font-size: 16px;
     font-weight: 400;
@@ -7248,6 +7248,15 @@ input:focus:-ms-input-placeholder {
   background-position: center right; }
   @media screen and (max-width: 768px) {
     .wallpaper_section--search .content {
+      background: none; } }
+
+.wallpaper_section--step .content {
+  background: url("../img/bg/Untitled-1.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 235px; }
+  @media screen and (max-width: 768px) {
+    .wallpaper_section--step .content {
       background: none; } }
 
 .aboutCompany_section {
@@ -8315,25 +8324,170 @@ input:focus:-ms-input-placeholder {
         line-height: 25px;
         margin: 0 0 15px 0; }
 
+.orderStatus_section {
+  max-width: 255px;
+  min-height: 366px;
+  -webkit-box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.15);
+  background-color: #f4f9ff;
+  padding: 30px 20px; }
+  .orderStatus_section .mainTitle {
+    color: #253757;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .orderStatus_section .ATC_status .textInfo {
+    color: #ef781c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px; }
+  .orderStatus_section .order_item {
+    width: 214px;
+    height: 41px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    padding: 0 17px; }
+    .orderStatus_section .order_item .name {
+      color: #253757;
+      font-size: 16px;
+      font-weight: 500; }
+    .orderStatus_section .order_item .btn-delete {
+      display: block;
+      width: 15px;
+      height: 15px;
+      position: relative;
+      background: transparent;
+      border: none;
+      cursor: pointer; }
+      .orderStatus_section .order_item .btn-delete span {
+        display: block;
+        position: absolute;
+        width: 15px;
+        border: 1px solid #ef781c; }
+        .orderStatus_section .order_item .btn-delete span:first-child {
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+        .orderStatus_section .order_item .btn-delete span:last-child {
+          -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+                  transform: rotate(-45deg); }
+  .orderStatus_section .order_dashbord {
+    margin: 25px 0; }
+    .orderStatus_section .order_dashbord .item {
+      color: #000000;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 27px; }
+      .orderStatus_section .order_dashbord .item .summ {
+        color: #ef781c;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 27px;
+        display: block; }
+
+.partStepRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 0 82px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 82px rgba(0, 0, 0, 0.07);
+  padding: 10px 50px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  background: #fff; }
+  .partStepRow .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    text-align: center;
+    margin: 0; }
+    .partStepRow .item .number {
+      display: block;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: #1A75BC; }
+    .partStepRow .item figcaption .description {
+      color: #253757;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      -webkit-text-decoration-line: underline;
+              text-decoration-line: underline;
+      text-align: center; }
+    .partStepRow .item figcaption .currency {
+      font-size: 16px;
+      font-weight: 100;
+      display: block;
+      width: 100%;
+      text-align: center; }
+      .partStepRow .item figcaption .currency .currency-mark {
+        color: #f18518;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px; }
+  .partStepRow .progressLine {
+    position: absolute; }
+
+.stepWrap {
+  background: #f4f9ff; }
+
 /**
  * Fix fonts that render as bold in Firefox
  *
  * Put this near the top of your style.css
  * Before any overriding styles
  */
-html {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  font-weight: 400; }
-
-/**
-   * Firefox specific rule
-   */
-@-moz-document url-prefix() {
-  body {
-    font-weight: lighter !important; } }
-
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #253757;
   font-family: 'Lato', sans-serif; }

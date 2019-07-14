@@ -1,0 +1,76 @@
+.orderStatus_section{
+    max-width: 255px;
+    min-height: 366px;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.15);
+    background-color: #f4f9ff;
+    padding: 30px 20px;
+    .mainTitle{
+        color: #253757;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .ATC_status{
+        .textInfo{
+            color: #ef781c;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 27px;
+        }
+    }
+    .order_item{
+        width: 214px;
+        height: 41px;
+        border-radius: 3px;
+        border: 1px solid #c4c4c4;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 0 17px;
+        .name{
+            color: #253757;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .btn-delete{
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: relative;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+
+            span{
+                display: block;
+                position: absolute;
+                width: 15px;
+                border: 1px solid #ef781c;
+                &:first-child{
+                    transform: rotate(45deg);
+                }
+                &:last-child{
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    .order_dashbord{
+        margin: 25px 0;
+        .item{
+            color: #000000;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 27px;
+            .summ{
+                color: #ef781c;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 27px;
+                display: block;
+            }
+        }
+    }
+}

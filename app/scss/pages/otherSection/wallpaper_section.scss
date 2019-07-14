@@ -82,3 +82,18 @@
         }
     }
 }
+
+
+.wallpaper_section--step{
+    @extend .wallpaper_section;
+    .content{
+        background: url('../img/bg/Untitled-1.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+        height: 235px;
+
+        @media screen and (max-width: 768px){
+            background: none;
+        }
+    }
+}
