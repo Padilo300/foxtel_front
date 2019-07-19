@@ -90,8 +90,10 @@
         background: url('../img/bg/Untitled-1.png');
         background-repeat: no-repeat;
         background-position: center right;
-        height: 235px;
-
+        height: 183px;
+        &.card{
+            height: 180px;
+        }
         @media screen and (max-width: 768px){
             background: none;
         }

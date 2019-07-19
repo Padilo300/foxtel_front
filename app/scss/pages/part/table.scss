@@ -2,9 +2,42 @@
     width: 1100px;
     margin: 50px 0;
     overflow: auto;
+    &.xs{
+        width: 835px;
+        
+        thead{
+            tr{
+                td{
+                    width: 80px;
+                    &:nth-child(1){
+                        width: 190px;
+                    }    
+                }
+            }
+        }
+        &.tableTarif{
+            tbody{
+                tr{
+                    border-bottom: 1px solid #d5d6db;
+                    td{
+                        color: #253757;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 27px;  
+                        &:first-child{
+                            color: #253757;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 27px;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     thead{
         tr{
-            border-bottom: 1px solid  #e5ebf1;
             td{
                 color: #1a75bc;
                 font-size: 16px;
@@ -17,6 +50,16 @@
                     font-weight: 400;
                     width: 600px;
                     text-align: left;
+                    position: relative;
+                    span{
+                        color: #253757;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        position: absolute;
+                        right: 0;
+                        top: 5px;
+                    }
                 }
             }
         }
@@ -24,9 +67,11 @@
     }
     tbody{
         tr{
+           
             td{
                 text-align: center;
                 padding: 5px 0;
+               
                 &:nth-child(1){
                     text-align: left;
                     font-weight: 700;
@@ -40,4 +85,12 @@
             }
         }
     }
+}
+.wrapTable{
+    @media screen and (max-width: 1200px){
+        overflow: auto;   
+    }
+}
+.wrapTableCard{
+    overflow: auto;
 }

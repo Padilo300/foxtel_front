@@ -36,11 +36,48 @@ body::-webkit-scrollbar-thumb {
 .min-wA{
   min-width: auto !important;
 }
+.mtop-80{
+  margin-top: 80px;
+}
 
 .cursorPointer{
   cursor: pointer;
 }
 
+.noMargin{
+  margin: 0 !important;
+}
+
+.fluid-md{
+  @media screen and (max-width:992px){
+    width: 100% !important; 
+    max-width: 100% !important;
+  }
+}
+
+.xl-order--1{
+  @media screen and (max-width: 1200px){
+    order: 1;
+  }
+}
+
+.xl-order--2{
+  @media screen and (max-width: 1200px){
+    order: 2;
+  }
+}
+
+.xl-order--3{
+  @media screen and (max-width: 1200px){
+    order: 3;
+  }
+}
+
+.xl-order--4{
+  @media screen and (max-width: 1200px){
+    order: 4;
+  }
+}
 
 /* ======= animate css ============= */
 

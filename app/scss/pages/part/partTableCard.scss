@@ -1,0 +1,85 @@
+.partTableCard{
+    thead{
+        tr{
+            td{
+                color: #253757;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27px;
+                text-align: center;
+                border-bottom: 1px solid #d5d6db;
+                padding: 0 0 5px 0;
+                &:nth-child(1){
+                    width: 290px;
+                    text-align: left;
+                }
+                &:nth-child(2){
+                    width: 200px;
+                }
+                &:nth-child(3){
+                    width: 180px;
+                }
+            }
+        }
+    }
+    tbody{
+        color: #253757;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        tr{
+            td{
+
+            }
+            &.title{
+                td{
+                    padding: 30px 0 10px 0;
+                }
+            }
+            &.area{
+                background-color: #ffffff;
+                td{
+                    color: #253757;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 15px 20px;
+                    &:nth-child(1){
+                        text-align: left;
+                    }   
+                }
+                .tableSelect{
+                    background: url('../img/ico/arrDown.png');
+                    background-repeat: no-repeat;
+                    background-position: 93% 12px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-indent: 1px;
+                    text-overflow: '';
+                    border: none;
+                    outline: none;
+                    padding-right: 35px;
+                    font-weight: 600;
+                    color: #253757;
+                }
+                .text{
+                    color: #253757;
+                    font-size: 18px;
+                    font-weight: 600;
+                    max-width: 260px;
+                    display: block;
+                }
+            }
+        }
+    }
+    tfoot{
+        @extend tbody;
+        border-top: 2px solid #8c98ab;
+        tr{
+            background-color: transparent !important;
+            .area{
+                background-color: transparent !important;
+            }
+        }
+    }
+}

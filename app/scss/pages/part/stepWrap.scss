@@ -1,3 +1,41 @@
 .stepWrap{
     background: $bg-lightGray;
+    .content{
+        width: 100%;
+        >.themeTitle {
+            width: 100%;
+            margin-top: 0;
+        }
+        .tabsPhone{
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+            li{
+                @media screen and (max-width: 992px){
+                    margin: 10px auto;
+                }
+                a{
+                    width: 183px;
+                    height: 36px;
+                    border: 1px solid #d5d6db;
+                    background-color: #f4f9ff;
+                    font-size: 16px;
+                    color: #000000;
+                    font-weight: 500;
+                    line-height: 1;
+                    text-align: center;
+                    border-radius: 0;
+                    &.active{
+                        color: #1a75bc;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .wrapCardSpecial{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }

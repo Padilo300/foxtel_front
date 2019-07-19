@@ -1,0 +1,94 @@
+.searchPhone{
+    height: 53px;
+    border: 1px solid #d5d6db;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0 30px;   
+}
+.inputThemCheckBox{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #253757;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 20px 0 0;
+    flex-direction: row-reverse;
+    &.end{
+        justify-content: flex-end;
+    }
+    .checks{
+        width: 16px;
+        height: 16px;
+        border-radius: 3px;
+        border: 1px solid #b8b8b8;
+        display: block;
+        margin: 0 15px 0 0;
+        background: #fff;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 21px;
+            height: 26px;
+            background: url(../img/ico/checked.png);
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 3px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px;
+            opacity: 0;
+            background-position: center;
+            top: -13px;
+        }
+    }
+    input:checked + .checks::after{
+        opacity: 1;
+    }
+    input{
+        display: none;
+    }
+}
+
+
+.inputCustomNumber{
+    border: none;
+    width: 10px;
+    min-width: 10px;
+    max-width: 10px;
+    font-weight: 600;
+    padding: 0;
+    
+}
+.input-minus,
+.input-plus{
+  background: transparent;
+  outline: none;
+  border: none;
+  display: block;
+  height: 100%;
+  font-weight: 600;
+  &:focus{
+    outline: none;
+  }
+}
+.number-spinner{
+    display: flex;
+    justify-content: center;
+}
+
+.inputRadio{
+
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
+    
+    input{
+        background: transparent;
+        width: 20px;
+        margin: 0 10px 0 0;
+        height: 20px;
+    }
+}

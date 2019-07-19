@@ -4,7 +4,12 @@
     text-align: center;
     margin: 40px auto 20px auto;
 }
-
+.opportunitySubTitle{
+    color: #253757;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0;
+}
 .title--orange{
     color: #f18518;
     font-size: 24px;
@@ -34,7 +39,15 @@
         left: 0;
     }
 }
+.opportunity-title--singl{
+    @extend .opportunity-title;
+    padding: 0;
+    margin: 30px 0 0 0;
 
+    &::before{
+        display: none;
+    }
+}
 .opportunity-p{
     font-size: 16px;
     font-weight: 400;
@@ -47,3 +60,15 @@
     font-weight: 400;
     line-height: 27px;
   }
+
+.singSltyleText--1{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 30px 0;
+}
+.customTextPay{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
